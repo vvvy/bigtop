@@ -290,6 +290,7 @@ bigtop {
       url     { download_path = "/$name/$name-${version.base}/"
                 site = "${apache.APACHE_MIRROR}/${download_path}"
                 archive = "${apache.APACHE_ARCHIVE}/${download_path}" }
+      git     { repo = "https://github.com/vvvy/crunch"; ref = "apache-crunch-0.14.0-sb"; dir = null}
     }
     'spark1' {
       name    = 'spark1'
