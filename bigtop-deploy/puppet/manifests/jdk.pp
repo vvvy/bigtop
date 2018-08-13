@@ -50,7 +50,7 @@ class jdk {
         ensure  => present,
       }
     }
-    /(CentOS|Amazon|Fedora)/: {
+    /(RedHat|CentOS|Amazon|Fedora)/: {
       package { 'jdk':
         name => 'java-1.8.0-openjdk-devel',
         ensure => present
